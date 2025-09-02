@@ -112,7 +112,7 @@ const struct RogueHubArea gRogueHubAreas[HUB_AREA_COUNT] =
         .areaName = _("Home Base"),
         .descText = gHubAreaDesc_Home,
         .requiredUpgrades = { HUB_UPGRADE_NONE },
-        .buildCost = 15,
+        .buildCost = 0,
         .connectionWarps = 
         {
             [HUB_AREA_CONN_NORTH] = { 0, 1 },
@@ -130,7 +130,7 @@ const struct RogueHubArea gRogueHubAreas[HUB_AREA_COUNT] =
         SET_AREA_PRIMARY_MAP(ROGUE_AREA_FARMING_FIELD),
         .areaName = _("Berry Fields"),
         .descText = gHubAreaDesc_BerryField,
-        .buildCost = 10,
+        .buildCost = 0,
         .requiredUpgrades = { HUB_UPGRADE_NONE },
         .connectionWarps = 
         {
@@ -166,7 +166,7 @@ const struct RogueHubArea gRogueHubAreas[HUB_AREA_COUNT] =
         SET_AREA_PRIMARY_MAP(ROGUE_AREA_RIDE_TRAINING),
         .areaName = _("Park"),
         .descText = gHubAreaDesc_RideTraining,
-        .buildCost = 15,
+        .buildCost = 0,
         .requiredUpgrades = { HUB_UPGRADE_NONE },
         .connectionWarps = 
         {
@@ -185,7 +185,7 @@ const struct RogueHubArea gRogueHubAreas[HUB_AREA_COUNT] =
         SET_AREA_PRIMARY_MAP(ROGUE_AREA_MARTS),
         .areaName = _("Poké Marts"),
         .descText = gHubAreaDesc_Marts,
-        .buildCost = 25,
+        .buildCost = 0,
         .requiredUpgrades = { HUB_UPGRADE_NONE },
         .connectionWarps = 
         {
@@ -245,7 +245,7 @@ const struct RogueHubArea gRogueHubAreas[HUB_AREA_COUNT] =
         SET_AREA_PRIMARY_MAP(ROGUE_AREA_DAY_CARE),
         .areaName = _("Day Care"),
         .descText = gHubAreaDesc_DayCare,
-        .buildCost = 30,
+        .buildCost = 0,
         .requiredUpgrades = { HUB_UPGRADE_NONE },
         .connectionWarps = 
         {
@@ -264,7 +264,7 @@ const struct RogueHubArea gRogueHubAreas[HUB_AREA_COUNT] =
         SET_AREA_PRIMARY_MAP(ROGUE_AREA_MARKET),
         .areaName = _("Market"),
         .descText = gHubAreaDesc_Market,
-        .buildCost = 25,
+        .buildCost = 0,
         .requiredUpgrades = { HUB_UPGRADE_NONE },
         .connectionWarps = 
         {
@@ -291,7 +291,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Interior Base"),
         .targetArea = HUB_AREA_HOME,
-        .buildCost = 3,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Home_LowerFloor,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -307,7 +307,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Town Style"),
         .targetArea = HUB_AREA_HOME,
-        .buildCost = 3,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Home_TownStyle,
         .requiredUpgrades = { HUB_UPGRADE_HOME_LOWER_FLOOR, HUB_UPGRADE_NONE }
     },
@@ -327,7 +327,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Unique{PKMN} Slots"),
         .targetArea = HUB_AREA_LABS,
-        .buildCost = 5,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Lab_UniqueMonSlots0,
         .requiredUpgrades = { HUB_UPGRADE_LAB_UNIQUE_MON_LAB, HUB_UPGRADE_NONE },
     },
@@ -335,7 +335,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Unique{PKMN} Slots+"),
         .targetArea = HUB_AREA_LABS,
-        .buildCost = 7,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Lab_UniqueMonSlots1,
         .requiredUpgrades = { HUB_UPGRADE_LAB_UNIQUE_MON_SLOTS0, HUB_UPGRADE_NONE },
     },
@@ -344,7 +344,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Rare Unique{PKMN}"),
         .targetArea = HUB_AREA_LABS,
-        .buildCost = 3,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Lab_UniqueMonRarity0,
         .requiredUpgrades = { HUB_UPGRADE_LAB_UNIQUE_MON_LAB, HUB_UPGRADE_NONE },
     },
@@ -352,7 +352,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Epic Unique{PKMN}"),
         .targetArea = HUB_AREA_LABS,
-        .buildCost = 5,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Lab_UniqueMonRarity1,
         .requiredUpgrades = { HUB_UPGRADE_LAB_UNIQUE_MON_RARITY_RARE, HUB_UPGRADE_NONE },
     },
@@ -360,7 +360,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Exotic Unique{PKMN}"),
         .targetArea = HUB_AREA_LABS,
-        .buildCost = 7,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Lab_UniqueMonRarity2,
         .requiredUpgrades = { HUB_UPGRADE_LAB_UNIQUE_MON_RARITY_EPIC, HUB_UPGRADE_NONE },
     },
@@ -379,7 +379,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Starter Bag"),
         .targetArea = HUB_AREA_ADVENTURE_ENTRANCE,
-        .buildCost = 3,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_AdventureEntrance_RandomStarter,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -387,7 +387,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Adventure Flag"),
         .targetArea = HUB_AREA_ADVENTURE_ENTRANCE,
-        .buildCost = 3,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_AdventureEntrance_AdventureReplay,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -414,7 +414,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Berry Field+"),
         .targetArea = HUB_AREA_BERRY_FIELD,
-        .buildCost = 3,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_BerryField_ExtraField,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -422,7 +422,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Berry Field++"),
         .targetArea = HUB_AREA_BERRY_FIELD,
-        .buildCost = 5,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_BerryField_ExtraField,
         .requiredUpgrades = { HUB_UPGRADE_BERRY_FIELD_EXTRA_FIELD0, HUB_UPGRADE_NONE }
     },
@@ -430,7 +430,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Berry Field+++"),
         .targetArea = HUB_AREA_BERRY_FIELD,
-        .buildCost = 7,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_BerryField_ExtraField,
         .requiredUpgrades = { HUB_UPGRADE_BERRY_FIELD_EXTRA_FIELD1, HUB_UPGRADE_NONE }
     },
@@ -439,7 +439,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Berry Yield+"),
         .targetArea = HUB_AREA_BERRY_FIELD,
-        .buildCost = 3,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_BerryField_HigherYeild,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -447,7 +447,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Berry Yield++"),
         .targetArea = HUB_AREA_BERRY_FIELD,
-        .buildCost = 5,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_BerryField_HigherYeild,
         .requiredUpgrades = { HUB_UPGRADE_BERRY_FIELD_HIGHER_YEILD0, HUB_UPGRADE_NONE }
     },
@@ -455,7 +455,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Berry Yield+++"),
         .targetArea = HUB_AREA_BERRY_FIELD,
-        .buildCost = 7,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_BerryField_HigherYeild,
         .requiredUpgrades = { HUB_UPGRADE_BERRY_FIELD_HIGHER_YEILD1, HUB_UPGRADE_NONE }
     },
@@ -478,7 +478,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("General Stock"),
         .targetArea = HUB_AREA_MARTS,
-        .buildCost = 3,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Mart_GeneralStock,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -486,7 +486,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("PokéBall Shop"),
         .targetArea = HUB_AREA_MARTS,
-        .buildCost = 3,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Mart_PokeBalls,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -494,7 +494,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("PokéBall Stock"),
         .targetArea = HUB_AREA_MARTS,
-        .buildCost = 7,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Mart_PokeBallsStock,
         .requiredUpgrades = { HUB_UPGRADE_MARTS_POKE_BALLS, HUB_UPGRADE_NONE }
     },
@@ -502,7 +502,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("TM Shop"),
         .targetArea = HUB_AREA_MARTS,
-        .buildCost = 3,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Mart_TMs,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -510,7 +510,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("TM Stock"),
         .targetArea = HUB_AREA_MARTS,
-        .buildCost = 7,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Mart_TMsStock,
         .requiredUpgrades = { HUB_UPGRADE_MARTS_TMS, HUB_UPGRADE_NONE }
     },
@@ -518,7 +518,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Battle Shop"),
         .targetArea = HUB_AREA_MARTS,
-        .buildCost = 3,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Mart_TravelerBattleEnhancers,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -526,7 +526,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Held Items Shop"),
         .targetArea = HUB_AREA_MARTS,
-        .buildCost = 7,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Mart_TravelerHeldItems,
         .requiredUpgrades = { HUB_UPGRADE_MARTS_TRAVELER_BATTLE_ENCHANCERS, HUB_UPGRADE_NONE }
     },
@@ -545,7 +545,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Move Tutor"),
         .targetArea = HUB_AREA_TOWN_SQUARE,
-        .buildCost = 5,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_TownSquare_MoveTutors,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -556,7 +556,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("DayCare Slots+"),
         .targetArea = HUB_AREA_DAY_CARE,
-        .buildCost = 7,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_DayCare_DayCareSlots,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -564,7 +564,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("DayCare Slots++"),
         .targetArea = HUB_AREA_DAY_CARE,
-        .buildCost = 9,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_DayCare_DayCareSlots,
         .requiredUpgrades = { HUB_UPGRADE_DAY_CARE_CAPACITY0, HUB_UPGRADE_NONE }
     },
@@ -572,7 +572,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("{PKMN} Breeder"),
         .targetArea = HUB_AREA_DAY_CARE,
-        .buildCost = 5,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_DayCare_Breeder,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -580,7 +580,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("{PKMN} Breeder+"),
         .targetArea = HUB_AREA_DAY_CARE,
-        .buildCost = 12,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_DayCare_BreederSeenDex,
         .requiredUpgrades = { HUB_UPGRADE_DAY_CARE_BREEDER, HUB_UPGRADE_NONE }
     },
@@ -597,7 +597,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Day Care Phone"),
         .targetArea = HUB_AREA_DAY_CARE,
-        .buildCost = 7,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_DayCare_Phone,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -605,7 +605,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Tea Room"),
         .targetArea = HUB_AREA_DAY_CARE,
-        .buildCost = 3,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_DayCare_TeaShop,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -613,7 +613,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Day Care Exp"),
         .targetArea = HUB_AREA_DAY_CARE,
-        .buildCost = 5,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_DayCare_ExpShare0,
         .requiredUpgrades = { HUB_UPGRADE_DAY_CARE_CAPACITY1, HUB_UPGRADE_NONE }
     },
@@ -621,7 +621,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Day Care Exp+"),
         .targetArea = HUB_AREA_DAY_CARE,
-        .buildCost = 9,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_DayCare_ExpShare1,
         .requiredUpgrades = { HUB_UPGRADE_DAY_CARE_EXP_SHARE0, HUB_UPGRADE_NONE }
     },
@@ -629,7 +629,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Day Care Exp++"),
         .targetArea = HUB_AREA_DAY_CARE,
-        .buildCost = 12,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_DayCare_ExpShare2,
         .requiredUpgrades = { HUB_UPGRADE_DAY_CARE_EXP_SHARE1, HUB_UPGRADE_NONE }
     },
@@ -639,7 +639,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("{POKEBLOCK} Blender+"),
         .targetArea = HUB_AREA_MARKET,
-        .buildCost = 3,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_DayCare_PokeblockBlenders,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -647,7 +647,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Bakery"),
         .targetArea = HUB_AREA_MARKET,
-        .buildCost = 7,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_DayCare_Bakery,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -657,7 +657,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Treat Shop"),
         .targetArea = HUB_AREA_MARKET,
-        .buildCost = 3,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_DayCare_TreatShop,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -665,7 +665,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("{POKEBLOCK} Shop"),
         .targetArea = HUB_AREA_MARKET,
-        .buildCost = 5,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_DayCare_TreatShopStock,
         .requiredUpgrades = { HUB_UPGRADE_MARKET_TREAT_SHOP, HUB_UPGRADE_NONE }
     },
@@ -675,7 +675,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Treat Shop"),
         .targetArea = HUB_AREA_MARKET,
-        .buildCost = 5,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_DayCare_TreatShop_Vanilla,
         .requiredUpgrades = { HUB_UPGRADE_MARKET_POKEBLOCK_BLENDERS, HUB_UPGRADE_NONE }
     },
@@ -692,7 +692,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Bank"),
         .targetArea = HUB_AREA_MARKET,
-        .buildCost = 3,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Mart_Bank,
         .requiredUpgrades = { HUB_UPGRADE_NONE }
     },
@@ -701,7 +701,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Pocket PC"),
         .targetArea = HUB_AREA_LABS,
-        .buildCost = 5,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Lab_PocketPC,
         .requiredUpgrades = { HUB_UPGRADE_NONE },
     },
@@ -710,7 +710,7 @@ const struct RogueAreaUpgrade gRogueHubUpgrades[HUB_UPGRADE_COUNT] =
     {
         .upgradeName = _("Pocket PC+"),
         .targetArea = HUB_AREA_LABS,
-        .buildCost = 7,
+        .buildCost = 0,
         .descText = gHubUpgradeDesc_Lab_PocketPCTracker,
         .requiredUpgrades = { HUB_UPGRADE_LAB_POCKET_PC, HUB_UPGRADE_LAB_UNIQUE_MON_LAB },
     },

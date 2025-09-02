@@ -222,8 +222,8 @@ const struct RogueItem gRogueItems[ITEM_ROGUE_ITEM_COUNT] =
         .iconPalette = gItemIconPalette_BuildResources,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        //.iconImage = gItemIcon_OaksParcel,
-        //.iconPalette = gItemIconPalette_OaksParcel,
+        .iconImage = gItemIcon_OaksParcel,
+        .iconPalette = gItemIconPalette_OaksParcel,
     },
 
 #ifdef ROGUE_EXPANSION
@@ -282,7 +282,7 @@ const struct RogueItem gRogueItems[ITEM_ROGUE_ITEM_COUNT] =
         .name = _("LARGE COIN CASE"),
 #endif
         .itemId = ITEM_LARGE_COIN_CASE,
-        .price = 12500,
+        .price = 10000,
         .description = gItemDesc_LargeCoinCase,
         .pocket = POCKET_ITEMS,
         .iconImage = gItemIcon_CoinCase,
