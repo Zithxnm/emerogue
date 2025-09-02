@@ -259,6 +259,9 @@ bool8 AnyCharmsActive()
 
     for(effectType = 0; effectType < EFFECT_COUNT; ++effectType)
     {
+
+        itemId = EffectToCharmItem(effectType);
+
         if(IsCharmActive(effectType))
             return TRUE;
     }
@@ -273,6 +276,9 @@ bool8 AnyCursesActive()
 
     for(effectType = 0; effectType < EFFECT_COUNT; ++effectType)
     {
+
+        itemId = EffectToCurseItem(effectType);
+        
         if(IsCharmActive(effectType))
             return TRUE;
     }
