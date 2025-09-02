@@ -76,8 +76,6 @@ extern const u8 gItemDesc_AutoMoveSelectCurse[];
 extern const u8 gItemDesc_OneHitCurse[];
 extern const u8 gItemDesc_SnagCurse[];
 extern const u8 gItemDesc_WildEggSpeciesCurse[];
-extern const u32 gItemIcon_Parcel[];
-extern const u32 gItemIconPalette_Parcel[];
 
 const struct RogueItem gRogueItems[ITEM_ROGUE_ITEM_COUNT] =
 {
