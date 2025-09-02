@@ -3307,7 +3307,7 @@ static const struct RideMonInfo sRideMonInfo[NUM_SPECIES] =
     },
     [SPECIES_GARCHOMP] =
     {
-        .flags = RIDE_MON_FLAG_CAN_RIDE | RIDE_MON_FLAG_CAN_CLIMB,
+        .flags = RIDE_MON_FLAG_CAN_RIDE | RIDE_MON_FLAG_CAN_FLY,
         .spriteInfo = 
         {
             [RIDE_SPRITE_DIR_UP] =
