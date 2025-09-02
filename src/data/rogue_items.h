@@ -222,8 +222,8 @@ const struct RogueItem gRogueItems[ITEM_ROGUE_ITEM_COUNT] =
         .iconPalette = gItemIconPalette_BuildResources,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconImage = gItemIcon_Parcel,
-        .iconPalette = gItemIconPalette_Parcel,
+        //.iconImage = gItemIcon_Parcel,
+        //.iconPalette = gItemIconPalette_Parcel,
     },
 
 #ifdef ROGUE_EXPANSION
