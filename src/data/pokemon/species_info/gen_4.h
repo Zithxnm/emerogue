@@ -2679,7 +2679,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_GARCHOMP] =
     {
         GARCHOMP_MISC_INFO,
-        .baseHP        = 250,
+        .baseHP        = 200,
         .baseAttack    = 130,
         .baseDefense   = 130,
         .baseSpeed     = 130,
@@ -2709,7 +2709,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_GARCHOMP_MEGA] =
     {
         GARCHOMP_MISC_INFO,
-        .baseHP        = 300,
+        .baseHP        = 255,
         .baseAttack    = 150,
         .baseDefense   = 150,
         .baseSpeed     = 150,
