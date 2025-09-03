@@ -282,7 +282,7 @@ const struct RogueItem gRogueItems[ITEM_ROGUE_ITEM_COUNT] =
         .name = _("LARGE COIN CASE"),
 #endif
         .itemId = ITEM_LARGE_COIN_CASE,
-        .price = 10000,
+        .price = 10,
         .description = gItemDesc_LargeCoinCase,
         .pocket = POCKET_ITEMS,
         .iconImage = gItemIcon_CoinCase,

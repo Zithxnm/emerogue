@@ -2679,14 +2679,14 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_GARCHOMP] =
     {
         GARCHOMP_MISC_INFO,
-        .baseHP        = 108,
+        .baseHP        = 250,
         .baseAttack    = 130,
-        .baseDefense   = 95,
-        .baseSpeed     = 102,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 85,
+        .baseDefense   = 130,
+        .baseSpeed     = 130,
+        .baseSpAttack  = 130,
+        .baseSpDefense = 130,
         .expYield = 270,
-        .abilities = { ABILITY_SAND_VEIL, ABILITY_NONE, ABILITY_ROUGH_SKIN },
+        .abilities = { ABILITY_PROTEAN, ABILITY_NONE, ABILITY_ROUGH_SKIN },
         .cryId = CRY_GARCHOMP,
         .description = POKEDEX_DESC_STRING(
             "When it folds up its body and extends its\n"
@@ -2709,20 +2709,20 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_GARCHOMP_MEGA] =
     {
         GARCHOMP_MISC_INFO,
-        .baseHP        = 108,
-        .baseAttack    = 170,
-        .baseDefense   = 115,
-        .baseSpeed     = 92,
-        .baseSpAttack  = 120,
-        .baseSpDefense = 95,
+        .baseHP        = 300,
+        .baseAttack    = 150,
+        .baseDefense   = 150,
+        .baseSpeed     = 150,
+        .baseSpAttack  = 150,
+        .baseSpDefense = 150,
         .expYield = 315,
-        .abilities = { ABILITY_SAND_FORCE, ABILITY_SAND_FORCE, ABILITY_SAND_FORCE },
+        .abilities = { ABILITY_PROTEAN, ABILITY_PROTEAN, ABILITY_PROTEAN },
         .cryId = CRY_GARCHOMP_MEGA,
         .description = POKEDEX_DESC_STRING(
-            "Excess energy melted its arms and wings\n"
-            "into giant scythes, sending it mad with\n"
-            "rage. It swings its scythes wildly and\n"
-            "slices the ground to pieces."),
+            "StRONGGGG!!!!\n"
+            "StRONGGGG!!!!\n"
+            "StRONGGGG!!!!\n"
+            "StRONGGGG!!!!"),
         FRONT_PIC(GarchompMega, 64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_GarchompMega,
