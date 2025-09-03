@@ -1185,7 +1185,7 @@ u16 Rogue_GetPrice(u16 itemId)
     if(Rogue_IsEvolutionItem(itemId))
     {
         price = 2100;
-        applyDefaultHubIncrease = FALSE;
+        applyDefaultHubIncrease = TRUE;
     }
 
 #ifdef ROGUE_EXPANSION
@@ -1276,11 +1276,11 @@ u16 Rogue_GetPrice(u16 itemId)
             break;
 
         case ITEM_ESCAPE_ROPE:
-            price = Rogue_IsRunActive() ? 8000 : 16000;
+            price = Rogue_IsRunActive() ? 5000 : 5000;
             break;
 
         case ITEM_MASTER_BALL:
-            price = 50000;
+            price = 10;
             break;
 
         case ITEM_NUGGET:
@@ -1314,11 +1314,11 @@ u16 Rogue_GetPrice(u16 itemId)
 
 #ifdef ROGUE_EXPANSION
         case ITEM_ABILITY_CAPSULE:
-            price = 6000;
+            price = 100;
             break;
 
         case ITEM_ABILITY_PATCH:
-            price = 7000;
+            price = 100;
             break;
 
         // Weaker versions
@@ -1381,10 +1381,10 @@ u16 Rogue_GetPrice(u16 itemId)
             break;
     }
 
-    // Hub is more pricy!
+    // Hub is less pricy!
     if(applyDefaultHubIncrease && !Rogue_IsRunActive())
     {
-        price *= 2;
+        price *= 0.10;
     }
 
     return price;
@@ -1644,7 +1644,7 @@ u32 Rogue_CalculateMovePrice(u16 move)
     switch (move)
     {
     case MOVE_BATON_PASS:
-        return 3500;
+        return 100;
     }
 
     switch (move)
@@ -1665,55 +1665,55 @@ u32 Rogue_CalculateMovePrice(u16 move)
 
     // accuracy cost
     if(accuracy == 100 || accuracy == 0)
-        cost += 500;
+        cost += 10;
     else if(accuracy >= 90)
-        cost += 250;
+        cost += 10;
     else if(accuracy >= 75)
-        cost += 200;
+        cost += 10;
     else if(accuracy >= 50)
-        cost += 100;
+        cost += 10;
 
     // pp cost
     if(pp <= 5)
         cost += 1000;
     else if(pp <= 10)
-        cost += 500;
+        cost += 10;
     else if(pp <= 20)
-        cost += 250;
+        cost += 10;
     else if(pp <= 30)
-        cost += 100;
+        cost += 10;
 
     // power cost
     if(power == 0) // is status move
-        cost += 1000;
+        cost += 10;
     else if(power >= 110)
-        cost += 2000;
+        cost += 10;
     else if(power >= 100)
-        cost += 1500;
+        cost += 10;
     else if(power >= 90)
-        cost += 1000;
+        cost += 10;
     else if(power >= 70)
         cost += 500;
     else if(power >= 50)
-        cost += 250;
+        cost += 10;
     else
-        cost += 150;
+        cost += 10;
 
     // Modify based on usage
     if(usageCount >= 300)
-        cost += 3000;
+        cost += 10;
     else if(usageCount >= 200)
-        cost += 2500;
+        cost += 10;
     else if(usageCount >= 100)
-        cost += 2000;
+        cost += 10;
     else if(usageCount >= 75)
-        cost += 2000;
+        cost += 10;
     else if(usageCount >= 50)
-        cost += 1500;
+        cost += 10;
     else if(usageCount >= 20)
-        cost += 1000;
+        cost += 10;
     else if(usageCount >= 100)
-        cost += 500;
+        cost += 10;
 
     if(cost < 100)
         cost = 100;

@@ -2679,30 +2679,30 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_GARCHOMP] =
     {
         GARCHOMP_MISC_INFO,
-        .baseHP        = 200,
-        .baseAttack    = 130,
-        .baseDefense   = 130,
-        .baseSpeed     = 130,
-        .baseSpAttack  = 130,
-        .baseSpDefense = 130,
+        .baseHP        = 255,
+        .baseAttack    = 190,
+        .baseDefense   = 190,
+        .baseSpeed     = 255,
+        .baseSpAttack  = 190,
+        .baseSpDefense = 190,
         .expYield = 270,
-        .abilities = { ABILITY_PROTEAN, ABILITY_NONE, ABILITY_ROUGH_SKIN },
+        .abilities = { ABILITY_ADAPTABILITY, ABILITY_HUGE_POWER, ABILITY_WONDER_GUARD },
         .cryId = CRY_GARCHOMP,
         .description = POKEDEX_DESC_STRING(
-            "When it folds up its body and extends its\n"
-            "wings, it looks like a jet plane. It is\n"
-            "covered in fine scales that reduce drag,\n"
-            "enabling it to fly at high speeds."),
-        FRONT_PIC(Garchomp, 64, 64),
-        FRONT_PIC_FEMALE(Garchomp, 64, 64),
+            "StRONGGGG!!!!\n"
+            "StRONGGGG!!!!\n"
+            "StRONGGGG!!!!\n"
+            "StRONGGGG!!!!"),
+        FRONT_PIC(GarchompMega, 64, 64),
+        FRONT_PIC_FEMALE(GarchompMega, 64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Garchomp,
-        .frontAnimId = ANIM_V_SHAKE_TWICE,
-        BACK_PIC(Garchomp, 64, 56),
+        .frontAnimFrames = sAnims_GarchompMega,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        BACK_PIC(GarchompMega, 64, 56),
         .backPicYOffset = 4,
-        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        PALETTES(Garchomp),
-        ICON(Garchomp, 0),
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        PALETTES(GarchompMega),
+        ICON(GarchompMega, 0),
     },
 
 #if P_MEGA_EVOLUTIONS
