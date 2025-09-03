@@ -2694,7 +2694,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             "StRONGGGG!!!!\n"
             "StRONGGGG!!!!"),
         FRONT_PIC(GarchompMega, 64, 64),
-        FRONT_PIC_FEMALE(GarchompMega, 64, 64),
+        FRONT_PIC_FEMALE(Garchomp, 64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_GarchompMega,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
