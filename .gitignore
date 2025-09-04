@@ -49,3 +49,4 @@ tools/ups/*
 pokeemerald-*.png
 data/scripts/Rogue/Strings/command_config.json
 /scripts
+.vscode/settings.json
