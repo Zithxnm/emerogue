@@ -4456,12 +4456,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_DRAGAPULT] =
     {
-        .baseHP        = 88,
-        .baseAttack    = 120,
-        .baseDefense   = 75,
-        .baseSpeed     = 142,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 75,
+        .baseHP        = 255,
+        .baseAttack    = 200,
+        .baseDefense   = 200,
+        .baseSpeed     = 200,
+        .baseSpAttack  = 200,
+        .baseSpDefense = 200,
         .types = { TYPE_DRAGON, TYPE_GHOST },
         .catchRate = 45,
         .expYield = 300,
@@ -4471,7 +4471,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_DRAGON },
-        .abilities = { ABILITY_CLEAR_BODY, ABILITY_INFILTRATOR, ABILITY_CURSED_BODY },
+        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_HUGE_POWER, ABILITY_CURSED_BODY },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Dragapult"),
         .cryId = CRY_DRAGAPULT,

@@ -12155,13 +12155,13 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     [MOVE_DRAGON_DARTS] =
     {
         .effect = EFFECT_HIT, // TODO: EFFECT_DRAGON_DARTS
-        .power = 50,
+        .power = 100,
         .type = TYPE_DRAGON,
-        .accuracy = 100,
-        .pp = 10,
+        .accuracy = 0,
+        .pp = 20,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
+        .priority = 1,
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .strikeCount = 2,

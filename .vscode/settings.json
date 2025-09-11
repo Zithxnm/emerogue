@@ -90,5 +90,6 @@
     "languageServerPoryscript.commandIncludes": [
         "asm/macros/event.inc",
         "asm/macros/movement.inc"
-    ]
+    ],
+    "C_Cpp.dimInactiveRegions": false
 }

@@ -1,6 +1,11 @@
 #ifndef GUARD_GBA_DEFINES_H
 #define GUARD_GBA_DEFINES_H
 
+#ifndef nullptr
+#define nullptr NULL
+#endif
+
+
 #include <stddef.h>
 
 #define TRUE  1

@@ -1180,6 +1180,7 @@ u16 Rogue_GetPrice(u16 itemId)
     if((itemId >= FIRST_ITEM_POKEBLOCK && itemId <= LAST_ITEM_POKEBLOCK))
     {
         price = 50;
+        applyDefaultHubIncrease = TRUE;
     }
 
     if(Rogue_IsEvolutionItem(itemId))
@@ -1221,6 +1222,7 @@ u16 Rogue_GetPrice(u16 itemId)
     if(itemId >= ITEM_LONELY_MINT && itemId <= ITEM_SERIOUS_MINT)
     {
         price = 1500;
+        applyDefaultHubIncrease = TRUE;
     }
 
     // Plates
@@ -1265,10 +1267,10 @@ u16 Rogue_GetPrice(u16 itemId)
     switch(itemId)
     {
         case ITEM_REVIVE:
-            price = 2000;
+            price = 10;
             break;
         case ITEM_MAX_REVIVE:
-            price = 4000;
+            price = 20;
             break;
 
         case ITEM_PP_UP:
@@ -1314,11 +1316,11 @@ u16 Rogue_GetPrice(u16 itemId)
 
 #ifdef ROGUE_EXPANSION
         case ITEM_ABILITY_CAPSULE:
-            price = 100;
+            price = 10;
             break;
 
         case ITEM_ABILITY_PATCH:
-            price = 100;
+            price = 10;
             break;
 
         // Weaker versions
@@ -1384,7 +1386,7 @@ u16 Rogue_GetPrice(u16 itemId)
     // Hub is less pricy!
     if(applyDefaultHubIncrease && !Rogue_IsRunActive())
     {
-        price *= 0.10;
+        price *= 0.05;
     }
 
     return price;
